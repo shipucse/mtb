@@ -1,0 +1,375 @@
+/*
+Theme Name: Mutual Trust Bank
+Theme URI: mtb.com
+Author: Saju
+Author URI: http://disruptglobal.com/
+Version: 1.0
+
+TOC:
+a. Reset
+b: Typography
+c: layout
+	1. header
+	2. banner
+	3. main
+	4. footer
+d: meadia query css
+
+*/
+/* ------------------------------------------------------------------ */
+/* a : Reset Css
+/* ------------------------------------------------------------------ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-align: left;
+  font-size: 14px; 
+  }
+  
+ 
+/*===========@Global Styles ============*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+img, fieldset {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+.clear {
+  clear: both; }
+
+/* =====for bootstrap defult===== */
+h1, h2, h3, h4, h5, h6, p, a, ul, ol {
+  margin: 0;
+  padding: 0; }
+
+/* =====Start header===== */
+
+/*****Start Content*****/
+ul.mtb-product-list{
+	list-style:none;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+}
+ul.mtb-product-list>li{
+	flex-basis:25%;
+	overflow:hidden;
+	position:relative;
+}
+ul.mtb-product-list>li>a>img{
+	width:100%;
+	transition:ease-in-out 0.4s;
+	-webkit-transition:ease-in-out 0.4s;
+	-moz-transition:ease-in-out 0.4s;
+}
+ul.mtb-product-list>li>a>img:hover{
+	transform:scale(1.1,1.1);
+	transition:ease-in-out 0.4s;
+	-webkit-transition:ease-in-out 0.4s;
+	-moz-transition:ease-in-out 0.4s;
+}
+.mtb-product-list-inner-box-1{
+	position:absolute;
+	left:0;
+	top:0;
+	padding:30px 20px;
+}
+.mtb-product-list-inner-heading{
+	color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.mtb-product-list-inner-para{
+	color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+	margin-top:20px;
+}
+a.mtb-product-list-inner-link{
+	text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-flex;
+}
+a.mtb-product-list-inner-link:hover{
+	color: #ed1c24;
+}
+a.mtb-product-list-inner-link>i{
+	font-size: 16px;
+    margin-left: 10px;
+    color: #00984a;
+}
+.mtb-product-list-inner-box-2{
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:30px 20px;
+}
+.mtb-feature-section{
+	background:url(images/mtb-feature-bg-new.jpg) no-repeat center;
+	min-height:1120px;
+	width:100%;
+	background-size:cover;
+}
+.mtb-feature-section-title{
+	font-size:60px;
+	font-weight:100;
+	line-height:65px;
+	color:#fff;
+	text-transform:capitalize;
+	margin:20px 0px;
+}
+.mtb-feature-section-title>span{
+	font-weight:900;
+}
+ul.mtb-card-benefit-list{
+	list-style:none;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+ul.mtb-card-benefit-list>li{
+	flex-basis:33.33%;
+	overflow:hidden;
+	position:relative;
+}
+ul.mtb-card-benefit-list>li>img{
+	width:100%;
+	transition:ease-in-out 0.4s;
+	-webkit-transition:ease-in-out 0.4s;
+	-moz-transition:ease-in-out 0.4s;
+}
+ul.mtb-card-benefit-list>li>img:hover{
+	transform:scale(1.1,1.1);
+	transition:ease-in-out 0.4s;
+	-webkit-transition:ease-in-out 0.4s;
+	-moz-transition:ease-in-out 0.4s;
+}
+.mtb-benefit-inner-box{
+	position:absolute;
+	left:0;
+	top:30%;
+	padding:20px;
+}
+.mtb-benefit-inner-box>h3{
+	color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.mtb-benefit-inner-box>p{
+	color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+	margin-top:10px;
+}
+.exchange-rate-head {
+    width: 100%;
+    min-height: 63px;
+    background-color: #009749;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 0;
+}
+span.exchange-rate-title {
+    float: left;
+    font-weight: 900;
+    color: #fff;
+    text-align: left;
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 63px;
+}
+span.exchange-rate-date {
+    float: right;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    font-size: 13pt;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 63px;
+}
+table.exchange-currencry {
+    width: 100%;
+}
+table.exchange-currencry>thead>tr>th {
+    color: #000;
+    font-weight: 700;
+    text-align: left;
+    background: #dbe0e4;
+    font-size: 11pt;
+}
+table.exchange-currencry>tbody>tr>td {
+    color: #000;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px;
+    font-size: 10.5pt;
+}
+span.cur-buy {
+    color: #009749;
+}
+span.cur-sell {
+    color: #e31937;
+}
+table.exchange-currencry>tbody>.even {
+    background: #fff;
+}
+table.exchange-currencry>tbody>.odd {
+    background: #e5e6e9;
+}
+.mtb-news-heading {
+    color: #009749;
+    font-size: 20pt;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 20px;
+    margin: 0;
+}
+ul.mtb-news-list {
+    width: 100%;
+    list-style: none;
+}
+ul.mtb-news-list > li {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d2d9df;
+    padding-top: 10px;
+}
+.mtb-news-title{
+    color: #000;
+    font-size: 11pt;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 3px;
+    margin: 0;
+    padding-top: 5px;
+}
+span.bg-border, span.bg-card-border{
+    width: 50px;
+    height: 4px;
+    background: #009749;
+    display: block;
+}
+span.bg-card-border {
+    float: left;
+}
+.mtb-news-para {
+    color: #000;
+    font-weight: 400;
+    font-size: 9pt;
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+}
+a.mtb-news-btn {
+    color: #e31937;
+    font-weight: 700;
+    font-size: 10pt;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+	display: block;
+	text-decoration:none;
+	transition:ease-in-out 0.3s;
+	-webkit-transition:ease-in-out 0.3s;
+	-moz-transition:ease-in-out 0.3s;
+}
+a.mtb-news-btn>i{
+    font-size: 12pt;
+	margin-left:10px;
+	vertical-align: middle;
+}
+a.mtb-news-btn:hover {
+    color: #009749;
+	transition:ease-in-out 0.3s;
+	-webkit-transition:ease-in-out 0.3s;
+	-moz-transition:ease-in-out 0.3s;
+}
+ul.more-news-list {
+    width: 90%;
+    float: left;
+    list-style: none;
+}
+ul.more-news-list > li {
+    float: left;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d9df;
+    margin-bottom: 8px;
+}
+ul.more-news-list > li >span{
+    font-size: 40px;
+    color: #009749;
+    float: left;
+    margin-right: 25px;
+}
+/*****End Content *****/
+/*****Start Footer *****/
+
+/*****End Footer *****/
+/*****Responsive *****/
+@media (min-width: 1699.98px) {
+    .container {
+		max-width: 1600px;
+	}
+	
+ }
+@media (max-width: 1699.98px) {
+	
+ }
+ 
+@media (max-width: 1599.98px) {
+	
+ }
+
+@media (max-width: 1299.98px) {
+	
+}
+
+@media (max-width: 1199.98px) {
+   
+	
+}
+@media (max-width: 1099.98px) {
+ 
+
+@media (max-width: 991.98px) {
+	
+
+@media (max-width: 767.98px) {
+	
+ }
+
+@media (max-width: 575.98px) {
+	
+	}
+
+@media (max-width: 480px) {
+	
+  }
+
+@media (max-width: 350px) {
+  
+  }
